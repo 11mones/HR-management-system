@@ -1,0 +1,62 @@
+
+img{
+
+    max-width: 80%;
+    max-height: 80%;
+}
+
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: rgb(139, 31, 31);
+    padding: 10px;
+    height: 100px;
+    display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+h1{
+    color: aliceblue;
+}
+a{
+    color: aliceblue;
+}
+
+header ul{
+   
+    display: flex;
+}
+header li{
+    display: inline;
+    color: aliceblue;
+}
+
+
+
+footer{
+    background-color: rgb(91, 20, 20);
+    padding: 10px;
+    display: flex;
+justify-content: center;
+align-items: flex-end;
+
+
+
+
+}
+footer ul{
+   
+    display: flex;
+}
+footer li{
+    display: inline;
+    color: aliceblue;
+}
