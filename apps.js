@@ -14,23 +14,23 @@ this.name = fullName;
 this.dep = department;
 this.lev = level;
 this.image = url;
-this.sal = salary;
+// this.sal = salary;
 let rjSal = Math.floor(Math.random() * (1000 - 500) ) + 500;
 let rmsSal = Math.floor(Math.random() * (1500 - 1000) ) + 1000;
 let rsSal = Math.floor(Math.random() * (2000 - 1500) ) + 1500;
 
 
-//here i will assume that the net salary equation is (salary * tax -255)
+
 
 if(this.lev  = "Senior"){
-    this.sal = rsSal * 7.5 - 255 ;
+    this.sal = rsSal -(rsSal * 0.075) ;
     
 }
 else if(this.lev  = "Mid-Senior"){
-    this.sal = rmsSal * 7.5 - 255 ;
+    this.sal = rmsSal -(rmsSal * 0.075) ;
 }
 else if (this. lev  = "Junior"){
-    this.sal  = rjSal * 7.5 - 255 ;
+    this.sal  = rjSal -(rjSal * 0.075) ;
 
 }
 allEmploeeys.push(this);
@@ -66,11 +66,14 @@ let emp6 = new Employee("1006" , "Hadi Ahmad", "Finance" , "Mid-Senior" );
 //  console.log(emp3);
 //  console.log(emp4);
 //  console.log(allEmploeeys);
-emp.render();
-emp1.render();
-emp2.render();
-emp3.render();
-emp4.render();
-emp5.render();
-emp6.render();
- 
+// emp.render();
+// emp1.render();
+// emp2.render();
+// emp3.render();
+// emp4.render();
+// emp5.render();
+// emp6.render();
+ for(let i =0;i<=allEmploeeys.length;i++){
+allEmploeeys[i].render();
+
+ }
