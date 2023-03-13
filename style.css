@@ -62,8 +62,43 @@ footer li{
 }
 
 #card-container{
-
-
+    display: flex; 
+    flex-wrap: wrap;
+ 
+padding: 60pt;
+    justify-content:  space-between;
+    gap: 40px;
+    justify-content: flex-start;
 
 
 }
+.card{
+    flex-wrap: wrap;
+    display: flex;
+    background-color: rgb(139, 31, 31);
+    align-content: space-between;
+    justify-content:  center ;
+
+    padding:30pt;
+   
+    color:  rgb(255, 255, 255);
+    height: 250pt;
+    width: 200pt;  
+  
+}
+
+.card img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+ 
